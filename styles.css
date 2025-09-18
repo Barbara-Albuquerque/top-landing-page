@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+}
+
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.logo{
+    font-size: 24px;
+    color:#f9faf8;
+    font-weight: 600;
+}
+.header-links{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    gap: 10px;
+    font-size: 18px;
+    color: #bdbdbf;
+}
+
+/* SUB HEADER */
+.subheader{
+    margin: 20px 100px; 
+    display: flex;
+}
+.main{
+    display: flex;
+    flex-direction: column; 
+    flex:1;
+    
+}
+.main-title{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    flex-wrap: wrap; 
+    margin-bottom: 0;
+}
+.signup-button{
+    background-color: #3882f6;
+    font-size: 18px;
+    color: #f9faf8;
+    padding: 8px 20px 8px 20px;
+    align-self: flex-start;
+    flex: 0;
+    border-radius: 5px;
+    
+    border-style: none;
+}
+.subtext{
+    flex-wrap: wrap;     
+    font-size: 18px;
+    color: #bdbdbf;
+}
+.placeholder{
+    flex:1;
+    background-color: #838691;
+    margin: 30px;
+}
+
+/* CORPO */
+.um{
+    background-color: #1f2937;  
+    flex-direction: column;
+}
+
+.dois{
+    background-color: white; 
+}
+.tres{background-color: #8ca5c8;
+}
+.quatro{
+    background-color: aquamarine;
+}
+
+.box{
+    display: flex;
+}
+
+.sqr{
+    border: 2px solid #3882f6;
+    border-radius: 5px;
+    padding: 10px;
+}
+.cards-info{
+    display: flex;
+    
+    gap: 30px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #1f2937;
+    padding: 0;
+    max-height: 50px;
+    box-sizing: border-box;
+}
