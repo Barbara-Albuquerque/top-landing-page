@@ -9,51 +9,59 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 .container{
     display: flex;
     flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 /* HEADER */
-.header{
+header{
     display: flex;
-    justify-content: space-around;
-    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
 }
 .logo{
     font-size: 24px;
     color:#f9faf8;
     font-weight: 600;
+    flex-wrap: wrap;
 }
-.header-links{
+.header-links, .header-links a{
     display: flex;
     list-style-type: none;
     margin: 0;
     padding:0;
-    gap: 10px;
+    gap: 20px;
     font-size: 18px;
     color: #bdbdbf;
-}
+    text-decoration: none;
+    flex-wrap: wrap;
+} 
 
 /* SUB HEADER */
-.subheader{
-    margin: 20px 100px; 
+.hero-content{ 
     display: flex;
+    gap: 100px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
-.main{
+.hero-left{
     display: flex;
     flex-direction: column; 
     flex:1;
-    
+    flex-wrap: wrap;
 }
-.main-title{
+.hero-title{
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
     flex-wrap: wrap; 
-    margin-bottom: 0;
 }
 .signup-button{
     background-color: #3882f6;
@@ -63,54 +71,147 @@ body{
     align-self: flex-start;
     flex: 0;
     border-radius: 5px;
-    
     border-style: none;
 }
-.subtext{
+.hero-text{
     flex-wrap: wrap;     
     font-size: 18px;
-    color: #bdbdbf;
+    color: #bdbdbf; 
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
-.placeholder{
-    flex:1;
-    background-color: #838691;
-    margin: 30px;
+.hero-img{
+    flex:1 0 0;   
+    flex-wrap: wrap;
+} 
+
+.hero-img img{ 
+    max-width: 100%;
+    min-width: 150px;
+    height: auto;
+    border-radius: 25px; 
 }
+
 
 /* CORPO */
 .um{
     background-color: #1f2937;  
     flex-direction: column;
+    padding: 0 170px 80px 170px;
+    flex:1;
+    margin:0; 
+    flex-wrap: wrap;
 }
 
 .dois{
     background-color: white; 
+    flex:1;
+    padding: 45px 0;
+    flex-wrap: wrap;
+
 }
-.tres{background-color: #8ca5c8;
+.tres{
+    background-color: #e5e7eb;
+    flex:1;
+    display: flex;
+    flex-direction: column; 
+    padding: 80px 0 40px 0;
+    flex-wrap: wrap;
 }
 .quatro{
-    background-color: aquamarine;
+    background-color: white;
+    flex:1;
+    display: flex; 
+    padding: 80px 0 60px 0; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.box{
-    display: flex;
+.info-title{
+    justify-self: center;
+    margin: 35px;
+    font-weight: 900;
+    font-size: 36px;
+    color: #1f2937;
+    flex-wrap: wrap;
 }
 
-.sqr{
-    border: 2px solid #3882f6;
-    border-radius: 5px;
-    padding: 10px;
-}
 .cards-info{
     display: flex;
-    
+    flex-direction: column; 
+    gap: 12px;  
+    justify-items: center;
+    align-items:center;
+    width: 170px; 
+}
+.card-text{
+    justify-content: center;        
+    font-size: 18px;
+    color: #7b7b7b;
+    text-align: center; 
+}
+.sqr{
+    border: 4px solid #3882f6;
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+}
+.cards{
+    display: flex;  
+    justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
+}
+.quote{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0 200px; 
+    flex-wrap: wrap;
+
+}
+.quote-author{ 
+    align-self:flex-end;
+    margin-right: 200px;
+    font-size: 18px;
+    font-weight: 900;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: #3882f6;
+    padding: 30px 80px 30px 80px;
+    display: flex;   
+    gap: 80px;
+    border-radius: 8px; 
+    justify-items: center;
+    align-items: center; 
+    flex-wrap: wrap;
 }
 
+.cta, .cta-text, .cta-button{
+    display: flex;
+    flex-direction: column;    
+    font-size: 18px;
+    color: #e5e7eb; 
+} 
+.cta-title{
+    font-weight: 800;
+}
+.cta-button{
+    background-color: #3882f6;
+    border: 2px #e5e7eb solid; 
+    align-self: center;
+    padding: 7px 35px 7px 35px;
+    border-radius: 8px;
+}
 /* FOOTER */
 .footer{
-    background-color: #1f2937;
-    padding: 0;
-    max-height: 50px;
-    box-sizing: border-box;
+    background-color: #1f2937;  
+    box-sizing: border-box; 
+    flex:1;
+    padding: 45px;
+    justify-content: center;       
+    font-size: 18px;
+    color: #e5e7eb;
 }
