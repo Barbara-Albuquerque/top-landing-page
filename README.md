@@ -1,0 +1,1 @@
+Este repositório contém uma landing page desenvolvida como projeto final dos fundamentos de HTML e CSS do curso The Odin Project - Foundations. O objetivo é aplicar os conceitos aprendidos, criando uma página inicial atrativa e funcional.
